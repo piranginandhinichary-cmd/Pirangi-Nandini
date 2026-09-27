@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-brand: 'Cinzel', 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #121110;
+    color: #E8E4DF;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+
+  .font-brand-mark {
+    font-family: var(--font-brand);
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #181715;
+}
+::-webkit-scrollbar-thumb {
+  background: #38332E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
+
+/* Wood grain subtle overlay */
+.wood-grain-subtle {
+  background-color: #161514;
+  background-image: radial-gradient(rgba(180, 83, 9, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Image zoom styling */
+.img-zoom-hover {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .img-zoom-hover {
+  transform: scale(1.05);
+}
+

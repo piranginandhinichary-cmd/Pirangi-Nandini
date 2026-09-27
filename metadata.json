@@ -1,0 +1,6 @@
+{
+  "name": "MANIKANTA FURNITURES",
+  "description": "Premium custom carpentry and bespoke wooden furniture studio crafted with precision, quality materials, and traditional craftsmanship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
